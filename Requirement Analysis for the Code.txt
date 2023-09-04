@@ -1,74 +1,74 @@
 Requirement Analysis for the Code:
 
-1. *Authentication System:*
+1. Authentication System:
    - Users should be able to log in with a username and password.
    - There are two types of users: administrators and customers.
    - The system should support up to 10 users.
 
-2. *User Roles:*
+2. User Roles:
    - Administrators can perform administrative tasks.
    - Customers can perform customer-specific tasks.
 
-3. *Element Management:*
+3. Element Management:
    - Administrators can add elements to a list.
    - Elements have integer values.
    - The list can hold up to 100 elements.
    - Elements can be displayed.
 
-4. *Search Functionality for Customers:*
+4. Search Functionality for Customers:
    - Customers can perform two types of searches: linear and binary.
    - Linear search: Customers can search for an element in the list using linear search and get the index if found.
    - Binary search: Customers can search for an element in the list using binary search and get the index if found.
-5. *Menus:*
+5. Menus:
    - The system provides separate menus for administrators and customers.
    - Menus should be interactive, allowing users to choose options.
    - Administrators have options to add elements and display elements.
    - Customers have options for searching and logging out.
 
-6. *Error Handling:*
+6. Error Handling:
    - The system should handle invalid inputs gracefully, providing appropriate error messages.
    - For example, it should handle incorrect login credentials, invalid menu choices, and element list full scenarios.
 
-7. *Looping and Continuity:*
+7. Looping and Continuity:
    - The system should run in an infinite loop, allowing users to perform multiple actions without exiting.
    - Users can log out to exit their respective menus.
 
-8. *Feedback and Confirmation:*
+8. Feedback and Confirmation:
    - The system should provide feedback to users for successful operations, such as adding an element or finding an element.
    - It should confirm logout actions.
 
-9. *Code Modularity:*
+9. Code Modularity:
    - The code should be modular, with separate functions for different functionalities (e.g., login, menu handling, search algorithms).
 
-10. *Security:*
+10. Security:
     - User passwords should be stored securely.
     - The system should ensure that only administrators can perform administrative tasks.
 
-11. *Limitations:*
+11. Limitations:
  - The system has fixed limits, such as the maximum number of users and the maximum number of elements in the list.
 
-12. *Initialization:*
+12. Initialization:
     - User accounts and the element list should be initialized with default values.
 
-13. *User Experience:*
+13. User Experience:
     - The system should provide a user-friendly interface with clear prompts and instructions.
 
-14. *Robustness:*
+14. Robustness:
     - The code should be robust and handle potential issues, such as buffer overflows in input.
-15. *Maintainability:*
+15. Maintainability:
     - The code should be well-documented and organized to facilitate future maintenance and updates.
 
-16. *Scalability:*
+16. Scalability:
     - The system should be designed to accommodate potential future enhancements or changes in requirements.
 
-17. *Efficiency:*
+17. Efficiency:
     - The search algorithms (linear and binary) should be efficient, especially for large lists.
 
-18. *Testing:*
+18. Testing:
     - The system should be thoroughly tested to ensure it meets the specified requirements and functions correctly.
 
-19. *Security and Data Protection:*
+19. Security and Data Protection:
     - The system should ensure the security and privacy of user data and prevent unauthorized access.
 
-20. *User Account Management:*
+20. User Account Management:
     - There should be provisions for adding and managing user accounts, but these features are not included in the current code.
