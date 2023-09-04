@@ -2,19 +2,19 @@ Design Architecture:
 
 The design architecture of the provided code can be summarized as follows:
 
-1. *Front-End Design:*
+1. Front-End Design:
    - The front-end of the code is text-based and interacts with users through the command line.
    - It relies on simple input/output operations to get user input and display information.
    - The user interface design is minimalistic, consisting of text-based menus and prompts.
 
-2. *Back-End Design:*
+2. Back-End Design:
    - The back-end of the code handles the core functionality of user authentication, menu navigation, and element manipulation.
    - User authentication is managed through a login function that checks user credentials against predefined data.
    - The code differentiates between administrators and customers, directing them to their respective menus.
    - For administrators, there's an admin menu allowing them to add elements to the list and display its contents.
    - For customers, there's a customer menu offering linear and binary search functionalities on the list of elements.
 
-3. *Database Design:*
+3. Database Design:
    - The code doesn't use a traditional database; instead, it stores user and element data in memory.
    - User information is stored in an array of user structures (`User`).
    - Element data is managed through an `ElementList` structure that includes an array and a size variable.
@@ -23,22 +23,22 @@ File Handling Concepts:
 
 The provided code primarily focuses on in-memory data management rather than file handling. However, here's a brief overview of file handling concepts:
 
-1. *File Input/Output (I/O):*
+1. File Input/Output (I/O):
    - In C, you can use functions like `fopen`, `fclose`, `fread`, `fwrite`, `fprintf`, and `fscanf` to read from and write to files.
    - These functions allow you to open files, read data from them, write data to them, and close them when done.
 
-2. *File Streams:*
+2. File Streams:
    - In C, files are treated as streams of data. You can create streams for reading (`FILE *fp = fopen("file.txt", "r")`) or writing (`FILE *fp = fopen("output.txt", "w")`) data.
    - Streams provide a buffered way to work with files efficiently.
 
-3. *Error Handling:*
+3. Error Handling:
    - File handling functions often return NULL or specific error codes when there's an issue with file operations.
    - Proper error handling should be implemented to check for errors during file operations.
 
-4. *Modes:*
+4. Modes:
    - When opening a file, you specify a mode (`"r"`, `"w"`, `"a"`, `"rb"`, `"wb"`, etc.) to define whether you're reading or writing and whether you're working with binary or text data.
 
-5. *File Pointers:*
+5. File Pointers:
    - File pointers (`FILE *`) are used to keep track of the current position in a file when reading or writing.
    - They are moved automatically when reading or writing data.
 
