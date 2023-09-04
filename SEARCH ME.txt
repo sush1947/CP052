@@ -1,0 +1,54 @@
+Search Me :
+Create application to searching the given element with the help of searching algorithms
+(binary search, linear search etc..)
+Take the inputs from the user like in which algorithm they want to find the element and
+take the searched element .
+admin : can able to do the basic CRUD operations
+customer : able to do give the inputs and by using this application they need to get
+exact answer
+for both admin and customer we need login page
+
+
+
+Main Function:
+- The main function is the entry point of the program.
+- It initializes two main data structures: `User` and `ElementList`.
+- It also initializes a variable `loggedInUser` to keep track of the currently logged-in user.
+
+User Structure:
+- Defines a structure called `User` to store information about users.
+- Each user has a username (up to 20 characters), a password (up to 20 characters), and an isAdmin flag (1 for admin, 0 for customer).
+
+ElementList Structure:
+- Defines a structure called `ElementList` to store a list of integers.
+- It has an array `data` to hold the integers and a variable `size` to keep track of the number of elements in the list.
+
+Login Function:
+- Takes user input for a username and password.
+- Compares the input credentials with pre-defined user data.
+- If a match is found, it sets the `loggedInUser` variable to the index of the logged-in user and returns that index. Otherwise, it returns -1 for a failed login.
+
+Admin Menu Function (adminMenu):
+- Provides a menu for administrators.
+- Options include adding elements to the `ElementList` and displaying its contents.
+- Continues running until the administrator chooses to log out.
+
+Customer Menu Function (customerMenu):
+- Provides a menu for customers.
+- Options include performing linear or binary searches on the `ElementList` for specific elements.
+- Continues running until the customer chooses to log out.
+
+Element Manipulation Functions:
+- `addElement`: Adds an element to the `ElementList` if there is space.
+- `displayElements`: Displays the elements stored in the `ElementList`.
+- `linearSearch`: Searches for an element in the `ElementList` using a linear search algorithm.
+- `binarySearch`: Searches for an element in the `ElementList` using a binary search algorithm.
+
+Program Flow:
+- The program begins by initializing users, the element list, and the `loggedInUser` variable.
+- It enters a loop that continues until the user chooses to log out.
+- Inside the loop, it checks whether the user is an admin or a customer and displays the respective menu.
+- The user can perform various actions based on their role, and the program responds accordingly.
+- The loop continues until the user chooses to log out.
+
+Overall, this code demonstrates a basic user authentication system, menu-driven interface, and simple data manipulation functions in C. It allows admins to manage elements in a list and customers to search for elements within that list.
